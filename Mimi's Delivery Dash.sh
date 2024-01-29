@@ -61,9 +61,8 @@ fi
 
 # Setup controls
 $ESUDO chmod 666 /dev/uinput
-$GPTOKEYB "gmloader" &
+$GPTOKEYB "gmloader" -c "controls.gptk" &
 echo "Loading, please wait... " > /dev/tty0
-$ESUDO chmod +x "$GAMEDIR/gmloader"
 
 # Run the game
 ./gmloader MDD.apk |& tee log.txt /dev/tty0
