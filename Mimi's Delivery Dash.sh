@@ -48,7 +48,7 @@ if [ ! -f "$GAMEDIR/installed" ]; then
 		mkdir assets & mv ./gamedata/*.ogg ./assets/
 
 		# Rename data.win
-		mv "$DATA/data.win" "$DATA/game.droid"
+		mv "gamedata/data.win" "gamedata/game.droid"
 
 		# Add assets to MDD.apk
 		echo "Zipping $ASSETS into apk..." > /dev/tty0
